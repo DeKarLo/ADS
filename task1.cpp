@@ -4,7 +4,6 @@ int find_min(int* arr, int n) {
     if (n == 1) return *arr;
     if (n < 1) throw invalid_argument("invalid lenght(must be more or equal to one)");
     int min = find_min(arr, n - 1);
-    cout<< arr[n-2] << " " << min << endl;
     if (arr[n-2] < min) {
         return arr[n-2];
     }
