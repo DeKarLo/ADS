@@ -10,6 +10,7 @@ void print_permutations(string s, string prefix = "") {
             string new_s = s.substr(0, i) + s.substr(i + 1);
             print_permutations(new_s, s[i] + prefix);
         }
+
     }
 }
 
